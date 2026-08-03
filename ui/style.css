@@ -1,0 +1,148 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: transparent !important;;
+    font-family: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background: transparent;
+}
+
+#overlay-root {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2147483647;
+    pointer-events: none;
+    background: transparent;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 20px;
+    backdrop-filter: blur(18px) saturate(140%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: auto;
+    overflow: hidden;
+    user-select: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    color: #f8fafc;
+    font-size: 11px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.16),
+        inset 0 1px 1px rgba(255, 255, 255, 0.16);
+    white-space: nowrap;
+    word-break: normal;
+    height: 36px;
+    min-width: 80px;
+    max-width: 200px;
+
+    /* Dynamic Transformation Controls */
+    transform-origin: bottom center;
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                width 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                height 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                background 0.2s ease, 
+                border-color 0.2s ease,
+                border-radius 0.2s ease;
+}
+
+.bubble:not(.expanded):hover {
+    transform: scale(1.12);
+}
+
+/* Default Translucent State Colors (Overridden dynamically if using JS style handles) */
+.bubble:not(.expanded) {
+    background: linear-gradient(180deg, rgba(92, 244, 158, 0.72), rgba(31, 94, 64, 0.34)) !important;
+    border: 1px solid rgba(168, 255, 213, 0.42) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 14px 30px rgba(20, 120, 74, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.16);
+}
+
+.bubble.expanded {
+    z-index: 20;
+    border-radius: 28px;
+    overflow: hidden;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px 22px;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: auto;
+    min-width: 320px;
+    max-width: min(84vw, 720px);
+    min-height: 180px;
+    max-height: min(72vh, 560px);
+    box-sizing: border-box;
+    color: #f8fdfa;
+    background: linear-gradient(180deg, rgba(92, 244, 158, 0.98), rgba(23, 72, 44, 0.98)) !important;
+    border: 1px solid rgba(240, 255, 235, 0.85) !important;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.28), inset 0 1px 3px rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease, top 0.2s ease, left 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(240, 255, 235, 0.72) rgba(23, 72, 44, 0.4);
+}
+
+.bubble.expanded::-webkit-scrollbar {
+    width: 10px;
+}
+
+.bubble.expanded::-webkit-scrollbar-track {
+    background: rgba(23, 72, 44, 0.35);
+    border-radius: 5px;
+}
+
+.bubble.expanded::-webkit-scrollbar-thumb {
+    background: rgba(240, 255, 235, 0.65);
+    border-radius: 5px;
+}
+
+.bubble.expanded::-webkit-scrollbar-thumb:hover {
+    background: rgba(240, 255, 235, 0.9);
+}
+
+/* Near-Death Alternate CSS Overlay Layer Hook (If applied by adding class directly) */
+.bubble.near-death.expanded {
+    background: linear-gradient(180deg, rgb(228, 92, 92), rgb(106, 32, 32)) !important;
+    border: 1px solid rgba(255, 188, 180, 0.80) !important;
+    box-shadow: 0 14px 30px rgba(130, 28, 24, 0.40), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+
+.bubble.is-exiting {
+    animation: death 260ms ease-out forwards;
+}
+
+@keyframes spawn {
+    0% { transform: scale(0.2); opacity: 0; }
+    70% { transform: scale(1.08); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes death {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.2); opacity: 0; }
+}
+
+.spawn { animation: spawn 320ms cubic-bezier(0.34, 1.56, 0.64, 1); }
