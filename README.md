@@ -10,10 +10,6 @@
 ![Platform](https://img.shields.io/badge/platform-Windows-success)
 ![License](https://img.shields.io/badge/license-AGPL3.0-green)
 ![Future](https://img.shields.io/badge/Linux%20%7C%20macOS-Planned-lightgrey)
-![GitHub stars](https://img.shields.io/github/stars/<username>/ClipBubble?style=social)
-![GitHub Downloads](https://img.shields.io/github/downloads/<username>/ClipBubble/total)
-![GitHub Release](https://img.shields.io/github/v/release/<username>/ClipBubble)
-
 Transform your clipboard history into an elegant desktop experience. ClipBubble runs quietly in the background and displays your recently copied items as interactive floating bubbles, making it easy to reuse clipboard content without interrupting your workflow.
 
 **🚀 Portable • ⚡ Fast • 🪶 Lightweight • 🦀 Native Rust • 💻 Windows**
