@@ -1,4 +1,4 @@
-[nitial Release: Float Your Clipboard
+# Initial Release: Float Your Clipboard
 
 ### Features
 - **Floating Clipboard Bubbles** - Clipboard items appear as semi-transparent, floating bubbles on screen
