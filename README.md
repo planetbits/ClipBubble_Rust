@@ -6,10 +6,13 @@
 
 **A beautiful, lightweight clipboard history manager that lives on your desktop as floating bubbles.**
 
-![Release](https://img.shields.io/badge/release-v2.0.0-blue)
+![Release](https://img.shields.io/badge/release-v1.0.0-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows-success)
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/license-AGPL3.0-green)
 ![Future](https://img.shields.io/badge/Linux%20%7C%20macOS-Planned-lightgrey)
+![GitHub stars](https://img.shields.io/github/stars/<username>/ClipBubble?style=social)
+![GitHub Downloads](https://img.shields.io/github/downloads/<username>/ClipBubble/total)
+![GitHub Release](https://img.shields.io/github/v/release/<username>/ClipBubble)
 
 Transform your clipboard history into an elegant desktop experience. ClipBubble runs quietly in the background and displays your recently copied items as interactive floating bubbles, making it easy to reuse clipboard content without interrupting your workflow.
 
@@ -21,7 +24,7 @@ Transform your clipboard history into an elegant desktop experience. ClipBubble 
 
 ---
 
-# Why ClipBubble?
+# 💬 Why ClipBubble?
 
 Most clipboard managers hide your clipboard history behind windows, menus, or keyboard shortcuts.
 
@@ -33,7 +36,7 @@ Whether you're a developer, writer, student, or office professional, ClipBubble 
 
 ---
 
-# Features
+# ✨ Features
 
 - 🎈 **Floating Clipboard Bubbles** – Recent clipboard items appear as beautiful floating bubbles.
 - ✨ **Organic Motion** – Smooth drifting animation with natural movement.
@@ -46,7 +49,7 @@ Whether you're a developer, writer, student, or office professional, ClipBubble 
 
 ---
 
-# Download & Usage
+# 🚀 Download & Usage
 
 ## Windows
 
@@ -61,7 +64,7 @@ ClipBubble is a **portable application**.
 
 ---
 
-# Configuration
+# ⚙️ Configuration
 
 Most settings are available from the **system tray icon**, including:
 
@@ -72,7 +75,7 @@ Most settings are available from the **system tray icon**, including:
 
 ---
 
-# Development
+# 🛠️ Development
 
 The following instructions are only for developers who want to build ClipBubble from source or contribute to the project.
 
@@ -150,7 +153,7 @@ src-tauri/target/release/bundle/
 
 ---
 
-# Roadmap
+# 🗺️ Roadmap
 
 - ✅ Windows portable release
 - 🔄 Search clipboard history
@@ -162,7 +165,7 @@ src-tauri/target/release/bundle/
 
 ---
 
-# Contributing
+# 🤝 Contributing
 
 Contributions, bug reports, feature requests, and pull requests are welcome.
 
@@ -170,6 +173,18 @@ If you find a bug or have an idea for a new feature, feel free to open an issue.
 
 ---
 
-# License
+# 📄 License
 
-This project is licensed under the AGPL-3.0 license.
+This project is licensed under the **GNU AGPL-3.0** License.
+
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+**If ClipBubble improves your workflow, consider giving the project a ⭐ on GitHub.**
+
+Made with ❤️ using **Rust** and **Tauri**
+
+</div>
