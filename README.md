@@ -1,4 +1,13 @@
-# ClipBubble
+<div align="center">
+<h1>ClipBubble </h1>
+
+![Release](https://img.shields.io/badge/release-v2.0.0-blue)
+![Platform](https://img.shields.io/badge/platform-Windows-success)
+![Future](https://img.shields.io/badge/Linux%20%7C%20macOS-Planned-lightgrey)
+![Status](https://img.shields.io/badge/status-Stable-success)
+
+</div>
+
 
 A lightweight, high-performance Windows desktop application that visualizes the system clipboard history as floating, organic, and reactive "bubbles." The app runs quietly in the background with zero impact on system productivity.
 
