@@ -2,6 +2,8 @@
 
 A lightweight, high-performance Windows desktop application that visualizes the system clipboard history as floating, organic, and reactive "bubbles." The app runs quietly in the background with zero impact on system productivity.
 
+![alt text](image.png)
+
 ## Features
 
 - **Floating Bubbles:** Clipboard items appear as visually appealing, semi-transparent bubbles.
