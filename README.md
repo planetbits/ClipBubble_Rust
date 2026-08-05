@@ -1,4 +1,8 @@
 <div align="center">
+
+<img src="/src-tauri/icons/icon.ico" width="140" alt="ClipBubble Logo">
+
+
 <h1>ClipBubble </h1>
 
 ![Release](https://img.shields.io/badge/release-v2.0.0-blue)
@@ -11,7 +15,7 @@
 
 A lightweight, high-performance Windows desktop application that visualizes the system clipboard history as floating, organic, and reactive "bubbles." The app runs quietly in the background with zero impact on system productivity.
 
-![alt text](image.png)
+![ClipBubble](/assets/image.png)
 
 ## Features
 
